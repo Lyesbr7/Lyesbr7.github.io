@@ -1,0 +1,158 @@
+
+*{
+   
+    font-family: 'Poppins',sans-serif;   
+    
+}
+
+body{
+    background-color: rgb(20, 75, 112);
+
+}
+.navbar a{
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    float: right;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4173a1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+     background-color: transparent;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+  header a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: double;
+  }
+
+  .presentation{
+    display: block;
+    color: white;
+    text-align:left;
+    padding: 20% 30%;
+  } 
+
+  nav
+{
+    display: inline-block;
+    width: 800px;
+    text-align: left;
+    font-size: 1.3em;
+    
+}
+
+.logo{
+  width: 100px;
+  padding: 20px 40px;
+}
+
+p{
+ 
+    color: rgb(178, 201, 75);
+    text-decoration: double;
+    align-items: center;
+    margin: 10px 10px;
+    
+    border: 1px solid #999;
+}
+
+
+.presentation .btn-box{
+  width: 345px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-box a{
+  position: relative;
+  width: 150px;
+  height: 100%;
+  background: #2fb9e4;
+  border: 2px solid #2fb9e4;
+  border-radius: 2%;
+  font-size: 20px;
+  color: rgb(20, 75, 112);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  z-index: 1;
+  overflow: hidden;
+  
+}
+h3{
+  color: #2fb9e4;
+}
+
+.btn-box a:nth-child(2){
+  background:transparent ;
+  color: #2fb9e4;
+}
+.btn-box a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(20, 75, 112);
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn-box a:hover::before{
+  width: 100%;
+}
+
+.btn-box a:nth-child(2)::before{
+  background: #2fb9e4;
+}
+.btn-box a:nth-child(2):hover{
+  color: rgb(20, 75, 112);
+}
+.btn-box a:hover{
+  color: #2fb9e4;
+}
